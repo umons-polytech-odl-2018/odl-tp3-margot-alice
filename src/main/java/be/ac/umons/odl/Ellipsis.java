@@ -9,6 +9,12 @@ public class Ellipsis implements Drawable {
 		this.xAxisLength = xAxisLength;
 		this.yAxisLength = yAxisLength;
 	}
+	public double perimeter(){
+		return 2*Math.PI*Math.sqrt((Math.pow(xAxisLength,2)+Math.pow(yAxisLength,2))/2);
+	}
+	public double area(){
+		return Math.PI*xAxisLength*yAxisLength;
+	}
 	@Override
 	public void draw(Graphics g) {
 		int x = a.getX();

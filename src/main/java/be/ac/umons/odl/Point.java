@@ -1,7 +1,7 @@
 package be.ac.umons.odl;
 
 public class Point {
-	private final int x, y;
+	private int x, y;
 
 	public Point(int x, int y) {
 		this.x = x;
@@ -18,6 +18,14 @@ public class Point {
 
 	public int getY() {
 		return y;
+	}
+
+	public void setX(int a){
+		this.x = a;
+	}
+
+	public void setY(int a){
+		this.y = a;
 	}
 
 }
